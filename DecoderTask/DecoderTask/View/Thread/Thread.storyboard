@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVY-7g-sEl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XES-lf-S3x">
+            <objects>
+                <navigationController id="BVY-7g-sEl" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4l1-BX-BCL">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lz6-8Y-Deg" kind="relationship" relationship="rootViewController" id="UzT-PQ-bBw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exe-k9-7uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="475"/>
+        </scene>
+        <!--Thread-->
+        <scene sceneID="HGe-Rb-zKL">
+            <objects>
+                <viewController storyboardIdentifier="ThreadViewController" id="Lz6-8Y-Deg" customClass="ThreadViewController" customModule="DecoderTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ly-hr-63x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dcoder_logo" translatesAutoresizingMaskIntoConstraints="NO" id="srO-gh-KL6">
+                                <rect key="frame" x="14" y="232.5" width="292" height="67"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-CN-ITn">
+                                <rect key="frame" x="102.5" y="319.5" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22742760179999999" green="0.22746592760000001" blue="0.2274192572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KTz-CN-ITn" firstAttribute="centerX" secondItem="srO-gh-KL6" secondAttribute="centerX" id="V1m-H8-VpR"/>
+                            <constraint firstItem="srO-gh-KL6" firstAttribute="centerY" secondItem="oSz-KQ-Oh6" secondAttribute="centerY" constant="-50" id="ZTO-Io-uDk"/>
+                            <constraint firstItem="KTz-CN-ITn" firstAttribute="top" secondItem="srO-gh-KL6" secondAttribute="bottom" constant="20" id="jI0-sQ-KaP"/>
+                            <constraint firstItem="srO-gh-KL6" firstAttribute="centerX" secondItem="oSz-KQ-Oh6" secondAttribute="centerX" id="zh1-GT-vfg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oSz-KQ-Oh6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Thread" id="pTh-0i-cxi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r71-NU-e1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="475"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dcoder_logo" width="292" height="67"/>
+    </resources>
+</document>

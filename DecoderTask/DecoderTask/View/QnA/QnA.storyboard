@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVY-7g-sEl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XES-lf-S3x">
+            <objects>
+                <navigationController id="BVY-7g-sEl" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4l1-BX-BCL">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9NQ-zP-ynt" kind="relationship" relationship="rootViewController" id="TAQ-6O-e4F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exe-k9-7uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="475"/>
+        </scene>
+        <!--QA-->
+        <scene sceneID="zPv-v8-8Wp">
+            <objects>
+                <viewController storyboardIdentifier="QAViewController" id="9NQ-zP-ynt" customClass="QAViewController" customModule="DecoderTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmz-yh-sey">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dcoder_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tgj-5U-fi1">
+                                <rect key="frame" x="14" y="232.5" width="292" height="67"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcL-ym-wQ1">
+                                <rect key="frame" x="102.5" y="319.5" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22742760179999999" green="0.22746592760000001" blue="0.2274192572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TcL-ym-wQ1" firstAttribute="top" secondItem="Tgj-5U-fi1" secondAttribute="bottom" constant="20" id="KMF-X3-jZe"/>
+                            <constraint firstItem="Tgj-5U-fi1" firstAttribute="centerY" secondItem="js9-Jq-1RH" secondAttribute="centerY" constant="-50" id="cDm-uB-uyb"/>
+                            <constraint firstItem="TcL-ym-wQ1" firstAttribute="centerX" secondItem="Tgj-5U-fi1" secondAttribute="centerX" id="wSs-m4-v4b"/>
+                            <constraint firstItem="Tgj-5U-fi1" firstAttribute="centerX" secondItem="js9-Jq-1RH" secondAttribute="centerX" id="yCb-ZK-L4d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="js9-Jq-1RH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QA" id="w6W-09-xUY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTU-Qv-df1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="475"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dcoder_logo" width="292" height="67"/>
+    </resources>
+</document>
